@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:stretchColumns="*" >
+
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+<FrameLayout
+    android:layout_width="wrap_content">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Back"
+            android:id="@+id/bpBackHome"
+            android:layout_column="0"
+            android:layout_span="0"
+            android:onClick="buttonConnexionOnClick" />
+</FrameLayout>
+
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:text="Connection"
+            android:id="@+id/bpConnect"
+
+            android:background="@drawable/borderbluelightst"
+            android:textColor="@android:color/white"
+            android:layout_column="3"
+            android:layout_span="3" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:id="@+id/textIpAdresse">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text=" IP Adress"
+            android:textSize="30dp"
+
+            android:id="@+id/textIpAdressew"
+            android:textColor="@color/DarkBlueSt"
+            android:layout_column="0" />
+
+        <EditText
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editIpAdresse"
+            android:layout_column="1"
+            android:inputType="numberDecimal"
+            android:digits="0123456789."
+            android:layout_span="5" />
+
+    </TableRow>
+
+
+
+</TableLayout>

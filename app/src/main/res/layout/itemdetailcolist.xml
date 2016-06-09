@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="500dp"
+    android:layout_height="match_parent"
+    android:weightSum="3"
+    android:background="@drawable/borderpink">
+
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/roundwhite"
+        android:padding="1dp">
+
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Measure Name"
+        android:background="@drawable/roundtextdarkbluest"
+        android:textColor="@android:color/white"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:padding="4dp"
+        android:layout_weight="1"
+        android:layout_margin="1dp"
+        />
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvDatas"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+
+        />
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:weightSum="1">
+
+        <TextView
+        android:id="@+id/tvMin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Min"
+        android:background="@color/LightBlueSt"
+        android:textColor="@android:color/white"
+        android:padding="4dp"
+            android:layout_weight="0.5"
+            android:layout_gravity="left"
+            android:layout_margin="3dp"/>
+
+        <TextView
+        android:id="@+id/tvMax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Max"
+        android:background="@color/LightBlueSt"
+        android:textColor="@android:color/white"
+            android:layout_weight="0.5"
+            android:padding="4dp"
+            android:layout_margin="3dp"
+            android:layout_gravity="end" />
+
+    </LinearLayout>
+
+    <TextView
+    android:id="@+id/tvThreshold"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Threshold"
+        android:textColor="@color/LightBlueSt"
+    android:gravity="center_vertical"
+    android:padding="4dp"
+        android:layout_gravity="center_horizontal"
+        android:textAlignment="center" />
+
+
+        </LinearLayout>
+</LinearLayout>

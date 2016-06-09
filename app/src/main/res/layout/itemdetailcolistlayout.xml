@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:weightSum="1">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Jour/mois/annee HH:MM:SS"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/tvDate"
+        android:padding="4dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="3dp"
+        android:gravity="center"
+        android:textColor="@android:color/white"
+        android:background="@color/DarkBlueSt"
+        android:layout_weight="0.5" />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Values"
+        android:id="@+id/measure"
+        android:background="@color/LightGrey"
+        android:textColor="@color/DarkBlueSt"
+        android:gravity="center"
+        android:padding="4dp"
+        android:layout_weight="0.5"
+        android:layout_marginBottom="1dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="3dp" />
+</LinearLayout>

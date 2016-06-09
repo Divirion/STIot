@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">ST Gateway IoT</string>
+    <string-array name="time_scale">
+        <item>Seconds</item>
+        <item>Minutes</item>
+        <item>Hours</item>
+        <item>Days</item>
+    </string-array>
+</resources>
